@@ -1,16 +1,16 @@
 // --- Starter TypeScript Code ---
 
-// A simple Book shape (constructor function still, class conversion is Task 2)
-interface Book {
+// A simple Book class
+class Book {
   title: string;
   author: string;
   year: number;
-}
 
-function Book(this: Book, title: string, author: string, year: number): void {
-  this.title = title;
-  this.author = author;
-  this.year = year;
+  constructor(title: string, author: string, year: number) {
+    this.title = title;
+    this.author = author;
+    this.year = year;
+  }
 }
 
 // Function to display book information
@@ -31,11 +31,3 @@ const book2 = new Book("The Lord of the Rings", "J.R.R. Tolkien", 1954);
 // Display the books on the webpage
 displayBook(book1);
 displayBook(book2);
-
-// --- Tasks (Converting to TypeScript) ---
-
-// Task 1: Add type annotations to the function parameters and return types.
-// Task 2: Convert the Book function to a TypeScript class.
-// Task 3: Create an interface for a "Review" object (with properties like bookId, rating, comment).
-// Task 4: Add a function to add a review to a book (you can simulate this with an array for now).
-// Task 5: Add type annotations to the new variables and functions that you created in prior steps.
