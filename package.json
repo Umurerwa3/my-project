@@ -18,6 +18,9 @@
   "homepage": "https://github.com/Umurerwa3/my-project#readme",
   "description": "",
   "devDependencies": {
-    "typescript": "^5.9.3"
+    "ts-loader": "^9.6.2",
+    "typescript": "^5.9.3",
+    "webpack": "^5.110.3",
+    "webpack-cli": "^7.2.3"
   }
 }
