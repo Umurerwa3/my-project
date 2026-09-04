@@ -29,6 +29,7 @@ function addReview(bookId: number, rating: number, comment: string): void {
 // Function to display book information
 function displayBook(book: Book): void {
   const bookList = document.getElementById("book-list");
+  if (!bookList) return;
   const bookDiv = document.createElement("div");
   bookDiv.innerHTML = `
     <h2>${book.title}</h2>
