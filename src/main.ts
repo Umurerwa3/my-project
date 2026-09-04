@@ -13,6 +13,13 @@ class Book {
   }
 }
 
+// A Review left on a book
+interface Review {
+  bookId: number;
+  rating: number;
+  comment: string;
+}
+
 // Function to display book information
 function displayBook(book: Book): void {
   const bookList = document.getElementById("book-list");
