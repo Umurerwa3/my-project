@@ -20,6 +20,12 @@ interface Review {
   comment: string;
 }
 
+const reviews: Review[] = [];
+
+function addReview(bookId: number, rating: number, comment: string): void {
+  reviews.push({ bookId, rating, comment });
+}
+
 // Function to display book information
 function displayBook(book: Book): void {
   const bookList = document.getElementById("book-list");
