@@ -1,14 +1,20 @@
-// --- Starter JavaScript Code ---
+// --- Starter TypeScript Code ---
 
-// A simple Book class (using constructor function in JS)
-function Book(title, author, year) {
+// A simple Book shape (constructor function still, class conversion is Task 2)
+interface Book {
+  title: string;
+  author: string;
+  year: number;
+}
+
+function Book(this: Book, title: string, author: string, year: number): void {
   this.title = title;
   this.author = author;
   this.year = year;
 }
 
 // Function to display book information
-function displayBook(book) {
+function displayBook(book: Book): void {
   const bookList = document.getElementById("book-list");
   const bookDiv = document.createElement("div");
   bookDiv.innerHTML = `
